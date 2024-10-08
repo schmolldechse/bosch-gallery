@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #eff1f2;
+  font-family: "Bosch Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1.25rem;
+}
+
+input:not([type="submit"]):not([type="reset"]) {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid black;
+  background-color: #e0e2e5;
+  font-size: 1rem;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+input:not([type="submit"]):not([type="reset"]):hover {
+  background-color: #c1c7cc;
+}
+
+input:not([type="submit"]):not([type="reset"]):focus {
+  border-color: #004975;
+  background-color: #d1e4ff;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 1rem;
+  color: black;
+  transition: background-color 0.25s, border-color 0.25s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #006ead;
+}
+
+.btn.btn-pri {
+  border-color: #007bc0;
+  background-color: #007bc0;
+  color: white !important;
+}
+
+.btn.btn-pri:hover {
+  border-color: #006ead;
+  background-color: #006ead;
+}
+
+.btn.btn-pri:active {
+  border-color: #004975;
+  background-color: #004975;
+}
+
+.btn.btn-sec {
+  background-color: white;
+  border-color: #006ead;
+  color: #006ead;
+}
+
+.btn.btn-sec:hover {
+  background-color: #d1e4ff;
+  border-color: #006ead;
+  color: #006ead;
+}
+
+.btn.btn-sec:active {
+  background-color: #9dc9ff;
+  border-color: #004975;
+  color: #004975;
+}
+
+.btn:disabled {
+  cursor: initial;
+  background-color: #c1c7cc !important;
+  border-color: #c1c7cc !important;
+  color: #8a9097 !important;
+}
+
+#supergraphic {
+  width: 102%;
+  height: 0.4rem;
+  margin: 0 -1%;
+  flex-shrink: 0;
+  background-image: url("../img/Bosch-Supergraphic.svg");
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+body > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+#gallery {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#gallery > div {
+  overflow: hidden;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e2e5;
+}
+
+#gallery > div > img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#gallery > footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

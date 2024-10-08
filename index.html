@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/javascript" src="js/script.js" defer></script>
+    <!--
+        Gallery
+        1. Make the button fetch data from a public foreign ressource (no API key)
+            - https://collectionapi.metmuseum.org/public/collection/v1/objects/${i} (not all have images)
+        2. Display all the images you recived in the gallery. 
+        3. Make the gallery load in steps of 8 pictures (each time you click the button load the next 8 images)
+    -->
+</head>
+<body>
+    <div id="supergraphic"></div>
+    <header>
+        <h5>Gallery</h5>
+        <img src="img/Bosch-Logo.svg" style="height: 28.4px;"/>
+    </header>
+    <main id="gallery">
+        <footer>
+            <button id="button-load-more" class="btn btn-sec">Load</button>
+        </footer>
+    </main>
+</body>
+</html>
